@@ -1,7 +1,72 @@
+
+
+/*inherent styling */
 body{
-	background-image: url(images/cityHallBkgrnd.png) #315D90;
+	/*max-width: 960px;*/
+	background-image: url("images/cityHallBkgrnd.png");
 }
 
+main{
+	margin:auto;
+}
+
+
+/*main section*/
 img{
-	max-width: 250px;
+	width: 80%;
+	margin: auto;
+	display: block;
+	padding-top: 15px;
+}
+
+/*row 1,  */
+
+.char {
+	background-color: grey;
+	margin: 15px;
+	padding: 0px;
+	width: 22%;
+	transition-delay: .25s; /*toss this in for when moving elements*/
+}
+
+.char p {
+	padding: 0px 10px;
+}
+
+.char h3 {
+	padding: 0px 10px;
+}
+
+
+
+/*row 2, wins & attack button & instructions*/
+.secondRow{
+	background-color: #fff;
+	padding: 1%;
+	margin: 15px 0px;
+}
+
+/*row 3, holds opponents*/
+
+/*row 4, footer & holds reset button*/
+.fourthRow button{
+	margin: auto;
+	display: block;
+}
+
+
+
+/*addClass for jquery*/
+.highlightPlay{
+	background-color: blue;
+	border: 2px solid green;
+}
+
+.highlightOpp{
+	background-color: purple;
+	border: 2px solid green;
+}
+
+.defeatedOpp{
+	background-color: red;q
 }

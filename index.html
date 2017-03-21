@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>RP Parks Rec</title>
+	
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
 	<!-- reset css  -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	
@@ -16,32 +20,62 @@
 	<header></header>
 	<main class="container">
 		<div class="row firstRow">
-			<h2>Please select your player character</h2>
-			<section class="col-md-3 leslie">
+			
+			<section class="col-md-3 char" id="Leslie" data-hp="130" data-ap="7" data-ca="13">
 				<img src="css/images/leslieChar.jpg" alt="Leslie Knope character" id="leslieImg">
-				<p>Leslie Knope, Enthusiastic Chairwoman</p>
+				<h3>Leslie Knope</h3>
+				<p>Enthusiastic Chairwoman</p>
+				<p>Health Points: <span></span></p>
 			</section>
-			<section class="col-md-3 ron">
+			
+			<section class="col-md-3 char" id="Ron" data-hp="110" data-ap="8" data-ca="15">
 				<img src="css/images/ronChar.jpg" alt="Ron Swanson character" id="ronImg">
-				<p>Ron Swanson, Apatheic Govt Employee</p>
+				<h3>Ron Swanson</h3> 
+				<p>Apatheic Govt Employee</p>
+				<p>Health Points: <span></span></p>
 			</section>
-			<section class="col-md-3 sebastian">
+			
+			<section class="col-md-3 char" id="Sebastian" data-hp="85" data-ap="25" data-ca="10">
 				<img src="css/images/lilSebastianChar.jpg" alt="Lil Sebastian character" id="sebastianImg">
-				<p>Lil Sebastian, Pawnee Mascot, R.I.P.</p>
+				<h3>Lil Sebastian</h3> 
+				<p>Pawnee Mascot, R.I.P.</p>
+				<p>Health Points: <span></span></p>
 			</section>
-			<section class="col-md-3 jamm">
+			
+			<section class="col-md-3 char" id="Jamm" data-hp="100" data-ap="8" data-ca="14">
 				<img src="css/images/jammChar.jpg" alt="Councilman Jamm character" id="jammImg">
-				<p>Jeremy Jamm, Chairman Dentist Jerk</p>
+				<h3>Jeremy Jamm</h3> 
+				<p>Chairman Dentist Jerk</p>
+				<p>Health Points: <span></span></p>
 			</section>
-
 			
 		</div>
+		
 		<div class="row secondRow">
-			
+			<div class="col-md-4">
+				<p class="wins">Wins: <span id="winsCount">0</span></p>
+				<button id="attack">Attack</button>	
+			</div>
+			<div class="col-md-8">
+				<h2 id="instructions">Please select your player character</h2>
+			</div>	
 		</div>
-		<div class="row thridRow"></div>
+		
+		<div class="row">
+			<div id="defeatedOpp"></div>
+		</div>
+
+		<footer class="row">
+			<div class="col-md-12 fourthRow">
+				<button id="reset">Reset</button>
+			</div>
+		</footer>
 		
 	</main>
 	<footer></footer>
+
+
+	<!-- personal js file -->
+	<script type="text/javascript" src="javascript/game.js"></script>
 </body>
 </html>
