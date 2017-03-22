@@ -22,7 +22,8 @@ img{
 /*row 1,  */
 
 .char {
-	background-color: grey;
+	background-color: rgba(131, 131, 134, 0.86);
+	border: 2px solid #6F6D76;
 	margin: 15px;
 	padding: 0px;
 	width: 22%;
@@ -58,15 +59,18 @@ img{
 
 /*addClass for jquery*/
 .highlightPlay{
-	background-color: blue;
-	border: 2px solid green;
+	background-color: rgba(26, 136, 153, 0.84);
+	border: 2px solid #025B67;
 }
 
 .highlightOpp{
-	background-color: purple;
-	border: 2px solid green;
+	background-color: rgba(64, 66, 69, 0.82);
+	border: 2px solid #5D5f63;
+	color: #fff;
 }
 
 .defeatedOpp{
-	background-color: red;q
+	background-color: rgba(156, 48, 62, 0.9);
+	border: 2px solid #4E000B;
+
 }
